@@ -7,6 +7,7 @@ const bodyParser = require('body-parser');
 const cors = require('cors');
 const morgan = require('morgan');
 const keys = require('./config/keys');
+
 const app = express();
 
 mongoose.connect(keys.mongoURI, {useNewUrlParser: true, useUnifiedTopology: true})
